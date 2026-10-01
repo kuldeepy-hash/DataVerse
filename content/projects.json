@@ -1,0 +1,145 @@
+[
+  {
+    "id": "datahub-ai",
+    "title": "DataHub AI",
+    "status": "portfolio",
+    "featured": true,
+    "summary": "DataHub AI is a data-focused platform designed to help users discover, understand, assess, clean, and prepare datasets for analysis. It brings dataset management, data quality assessment, preprocessing, and analytics preparation into a structured workflow.",
+    "technologies": [
+      "Django",
+      "SQLite",
+      "Python",
+      "Pandas",
+      "NumPy",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Power BI"
+    ],
+    "features": [
+      "Dataset upload and management",
+      "Dataset search and categorization",
+      "Data dictionary and metadata",
+      "Data quality assessment and scoring",
+      "Missing-value detection",
+      "Duplicate detection",
+      "Invalid-value checks",
+      "Consistency checks",
+      "Smart data cleaning and preprocessing",
+      "Prepared dataset export",
+      "Workflow toward Power BI, Python, and SQL analysis"
+    ],
+    "links": {
+      "github": null,
+      "demo": null,
+      "caseStudy": null
+    },
+    "subtitle": "Dataset Management & Data Quality Assessment Platform",
+    "category": "FLAGSHIP / DATA PLATFORM",
+    "workflow": [
+      "Find",
+      "Understand",
+      "Assess",
+      "Score",
+      "Identify Issues",
+      "Clean",
+      "Analysis-Ready Dataset",
+      "Analyze"
+    ]
+  },
+  {
+    "id": "at-risk-students",
+    "title": "At-Risk Student Detection and Performance Monitoring System",
+    "status": "portfolio",
+    "featured": false,
+    "summary": "A Python-based workflow designed to flag students at academic risk using attendance, grades, and academic performance patterns.",
+    "technologies": [
+      "Python",
+      "Machine Learning",
+      "HTML",
+      "CSS",
+      "SQLite"
+    ],
+    "features": [
+      "Cleaned and validated academic-record datasets, including missing values and formatting inconsistencies.",
+      "Built a Python-based machine-learning workflow designed to flag students at risk.",
+      "Designed faculty-facing dashboards for viewing attendance, grades, and risk indicators.",
+      "Used SQLite for storing and querying student data."
+    ],
+    "links": {
+      "github": "https://github.com/kuldeepy-hash/At-Risk-Student-Detection-System",
+      "demo": null,
+      "caseStudy": null
+    },
+    "category": "DATA / ML APPLICATION"
+  },
+  {
+    "id": "sales-dashboard",
+    "title": "Sales Performance Dashboard",
+    "status": "portfolio",
+    "featured": false,
+    "summary": "Interactive Power BI views for sales, profit, customer performance, and monthly trends, with Power Query transformations and filters.",
+    "technologies": [
+      "Power BI",
+      "Excel",
+      "Power Query"
+    ],
+    "features": [
+      "Cleaned and transformed multi-region sales data using Power Query.",
+      "Built an interactive Power BI dashboard using KPI cards, trend charts, and analytical visualizations.",
+      "Created views for exploring sales, profit, customer performance, and monthly trends.",
+      "Added filters to make analysis more interactive."
+    ],
+    "links": {
+      "github": "https://github.com/kuldeepy-hash/Sales-Performance-Dashboard",
+      "demo": null,
+      "caseStudy": null
+    },
+    "category": "ANALYTICS DASHBOARD"
+  },
+  {
+    "id": "hr-dashboard",
+    "title": "HR Analytics Dashboard",
+    "status": "portfolio",
+    "featured": false,
+    "summary": "Power BI analysis of workforce demographics, department distribution, overtime, and job satisfaction using the IBM HR Analytics Employee Attrition Dataset.",
+    "technologies": [
+      "Power BI",
+      "Power Query",
+      "Microsoft Excel"
+    ],
+    "features": [
+      "Department, job role, age, and education-field views.",
+      "Years-at-company trends, overtime analysis, and monthly income by department.",
+      "Job satisfaction gauge and department summary table."
+    ],
+    "links": {
+      "github": "https://github.com/kuldeepy-hash/HR-Analytics-Dashboard",
+      "demo": null,
+      "caseStudy": null
+    },
+    "category": "ANALYTICS DASHBOARD"
+  },
+  {
+    "id": "finance-dashboard",
+    "title": "Finance Analytics Dashboard",
+    "status": "portfolio",
+    "featured": false,
+    "summary": "Power BI views of revenue, profit, customers, monthly trends, and regional performance, with year, region, category, and segment slicers.",
+    "technologies": [
+      "Power BI",
+      "Microsoft Excel"
+    ],
+    "features": [
+      "Revenue, profit, order, and customer KPI views.",
+      "Monthly revenue, profit by category, revenue by region, and sales by segment.",
+      "Interactive slicers for year, region, category, and segment."
+    ],
+    "links": {
+      "github": "https://github.com/kuldeepy-hash/Finance-Analytics-Dashboard",
+      "demo": null,
+      "caseStudy": null
+    },
+    "category": "ANALYTICS DASHBOARD"
+  }
+]

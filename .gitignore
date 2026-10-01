@@ -1,0 +1,30 @@
+# Local credentials and configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+.codex/
+.agents/
+
+# Dependencies, caches, local output and editor files
+node_modules/
+.cache/
+coverage/
+_site/
+dist/
+work/
+tmp/
+temp/
+*.log
+*.tmp
+*.bak
+*.zip
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local QA reports are kept outside the public repository
+VERIFICATION.md

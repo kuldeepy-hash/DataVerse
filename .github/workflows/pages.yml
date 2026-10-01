@@ -1,0 +1,44 @@
+name: Deploy DataVerse to GitHub Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Test and regenerate static project cards
+        run: |
+          node --test tests/*.test.mjs
+          node scripts/build-projects.mjs
+          git diff --exit-code -- index.html
+      - uses: actions/configure-pages@v5
+      - name: Stage only public website assets
+        run: |
+          mkdir _site
+          cp index.html .nojekyll _site/
+          cp -R css js assets _site/
+          mkdir _site/projects
+          find projects -type f ! -name '*.md' -exec cp --parents {} _site/ \;
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
